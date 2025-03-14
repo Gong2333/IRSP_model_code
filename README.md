@@ -19,3 +19,6 @@ joblib                            1.4.2
 matplotlib                        3.8.4
 statsmodels                       0.14.2
 scikit-learn                      1.6.1
+
+
+This model is associated with the study Gong et al., "Quantifying Global Reservoir Sedimentation Rates," Geophysical Research Letters (under review, 2025).
