@@ -10,46 +10,12 @@ Sediment accumulation in reservoirs is a global issue that steadily reduces thei
 
 To run the IRSP model, you need Python installed along with the dependencies listed below. You can install the required libraries by running:
 
-```bash
-pip install -r requirements.txt
+##Pyhton 3.10
 
-
-Python 3.x
-pandas
-numpy
-scikit-learn
-tensorflow (for deep learning models, if used)
-matplotlib (for visualizations)
-seaborn (for visualizations)
-geopy (for geographical calculations)
-
-
-##Usage
-Clone the repository:
-git clone https://github.com/yourusername/irsp-model.git
-Navigate to the project directory:
-cd irsp-model
-Run the model: To train the model and generate predictions, execute the following script:
-python run_model.py
-This will:
-Load training data.
-Train the model using machine learning techniques.
-Output predictions for sedimentation rates for each reservoir.
-If you want to test the model on a new dataset, you can replace the train_data.csv with a new dataset.
-
-
-import pandas as pd
-from model import IRSPModel
-
-# Load your dataset (e.g., train_data.csv)
-data = pd.read_csv('data.csv')
-
-# Instantiate the model
-model = IRSPModel()
-
-# Predict you data
-predictions = model.predict(data)
-
-# Save the results to a CSV file
-predictions.to_csv('predicted_rsr.csv', index=False)
-
+Package                           Version
+--------------------------------- ------------------
+pandas                            2.2.2
+joblib                            1.4.2
+matplotlib                        3.8.4
+statsmodels                       0.14.2
+scikit-learn                      1.6.1
